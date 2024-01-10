@@ -438,6 +438,21 @@
             </li>
           </ul>
         </div>
+        <div class="form-footer-container">
+          <p class="subscribe-elem">Subscribe</p>
+          <form action="" class="form-footer">
+            <label for="email_footer"
+              ><input
+                class="form-footer-email"
+                id="email_footer"
+                name="email"
+                type="text"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subscribe-button" type="submit">Subscribe</button>
+          </form>
+        </div>
       </div>
     </footer>
     <div data-modal class="modal is-hidden">
@@ -447,6 +462,46 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <form action="" novalidate class="form-container">
+          <legend class="form-title">
+            Leave your contacts and we will call you back
+          </legend>
+          <label for="user_name" class="form-element">
+            Name
+            <input class="form-place" id="user_name" type="text" name="name" />
+          </label>
+          <label for="user_phone" class="form-element"
+            >Phone
+            <input
+              class="form-place"
+              id="user_phone"
+              type="number"
+              name="phone"
+            />
+          </label>
+          <label for="user_email" class="form-element"
+            >Email
+            <input
+              class="form-place"
+              id="user_email"
+              type="email"
+              name="email"
+            />
+          </label>
+          <label for="user_comment" class="form-element"
+            >Comment
+            <textarea
+              class="form-place form-place-comment"
+              name="comment"
+              id="user_comment"
+              placeholder="Text input"
+              cols="30"
+              rows="10"
+            ></textarea>
+
+            <button class="form-button" type="submit">Send</button>
+          </label>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
