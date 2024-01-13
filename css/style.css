@@ -343,7 +343,6 @@ ul {
 
 .icons-list-footer {
   display: flex;
-  flex-wrap: wrap;
   gap: 16px;
   list-style: none;
   justify-content: center;
@@ -577,6 +576,7 @@ ul {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  margin-bottom: 14px;
 }
 
 .subscribe-button {
@@ -584,7 +584,20 @@ ul {
   background: var(--buttons-color);
   width: 165px;
   height: 40px;
+  color: var(--background-color);
+  padding-left: 24px;
+  padding-bottom: 8px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
 }
+
+.footer-icon {
+  padding: 8px 24px 8px 16px;
+}
+
 .form-footer-container {
   padding-left: 192px;
 }
@@ -598,6 +611,7 @@ ul {
   border-radius: 4px;
   border: 1px solid var(--footer-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-right: 24px;
 }
 /* FORM MODAL */
 .form-container {
@@ -651,6 +665,26 @@ ul {
   margin-bottom: 16px;
 }
 
+.privacy-policy-elem {
+  color: var(--icons-color);
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.48px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.privacy-policy {
+  color: var(--buttons-color);
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.48px;
+  text-decoration-line: underline;
+}
+
 .form-button {
   color: var(--background-color);
   background: var(--buttons-color);
@@ -666,6 +700,7 @@ ul {
   height: 56px;
   margin-right: 120px;
   margin-left: 119px;
+  margin-bottom: 24px;
 }
 /* PORTOFOLIO */
 .portfolio-container {
