@@ -66,6 +66,7 @@ ul {
   pointer-events: none;
 }
 .modal-background {
+  padding: 72px 24px 24px 24px;
   width: 408px;
   position: absolute;
   top: 50%;
@@ -576,26 +577,32 @@ ul {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .subscribe-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
   border-radius: 4px;
   background: var(--buttons-color);
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   color: var(--background-color);
   padding-left: 24px;
   padding-bottom: 8px;
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
+  cursor: pointer;
+  border: none;
 }
 
 .footer-icon {
   padding: 8px 24px 8px 16px;
+  margin-left: 16px;
 }
 
 .form-footer-container {
@@ -605,43 +612,70 @@ ul {
   display: flex;
   flex-direction: row;
 }
+
+.form-elem {
+  gap: 24px;
+}
 .form-footer-email {
   background: var(--brand-color);
+  background-color: transparent;
   height: 40px;
+  width: 264px;
   border-radius: 4px;
-  border: 1px solid var(--footer-color);
+  border: 1px solid #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   margin-right: 24px;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  color: #ffffff;
 }
 /* FORM MODAL */
 .form-container {
-  display: flex;
-  flex-direction: column;
-  padding: 72px 24px 24px 24px;
+  margin-bottom: 8px;
 }
 
 .form-place {
   display: flex;
   flex-direction: column;
-  width: 360px;
+  width: 100%;
   height: 40px;
   border-radius: 4px;
-  border: 1px solid var(--form-color);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
   margin-bottom: 8px;
   margin-top: 4px;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
 }
 
 .form-place:hover,
 .form-place:focus {
   border-radius: 4px;
+  border-color: #4d5ae5;
   border: 1px solid var(--buttons-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-place-comment {
-  width: 360px;
+  width: 100%;
   height: 120px;
   resize: none;
+  font-size: 12px;
+  line-height: 1.17;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-place-comment:focus {
+  border-color: #4d5ae5;
 }
 
 .form-element {
@@ -649,11 +683,33 @@ ul {
   font-family: Roboto;
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.48px;
   margin-bottom: 8px;
+  letter-spacing: 0.04em;
+  display: block;
+  margin-bottom: 4px;
 }
 
+.policy-container {
+  margin-bottom: 24px;
+}
+
+.icons-input {
+  position: relative;
+}
+
+.icons-form {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icons-form:focus {
+  fill: #4d5ae5;
+}
 .form-title {
   color: var(--brand-color);
   text-align: center;
@@ -665,29 +721,54 @@ ul {
   margin-bottom: 16px;
 }
 
+.comment-form {
+  margin-bottom: 16px;
+}
 .privacy-policy-elem {
   color: var(--icons-color);
+  display: block;
   font-family: Roboto;
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.48px;
   margin-top: 16px;
   margin-bottom: 24px;
 }
 .privacy-policy {
   color: var(--buttons-color);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  fill: transparent;
   font-family: Roboto;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  height: 16px;
+  border-radius: 2px;
   letter-spacing: 0.48px;
   text-decoration-line: underline;
+  transition: background-colour 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.privacy-policy-link {
+  color: #4d5ae5;
+}
+
+.checked-icon {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
 .form-button {
   color: var(--background-color);
   background: var(--buttons-color);
+  display: block;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
@@ -701,6 +782,9 @@ ul {
   margin-right: 120px;
   margin-left: 119px;
   margin-bottom: 24px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* PORTOFOLIO */
 .portfolio-container {
