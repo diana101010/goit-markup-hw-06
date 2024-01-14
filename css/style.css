@@ -649,7 +649,7 @@ ul {
   margin-top: 4px;
   padding-left: 38px;
   outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-place:hover,
@@ -666,6 +666,7 @@ ul {
   resize: none;
   font-size: 12px;
   line-height: 1.17;
+  letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -748,11 +749,12 @@ ul {
   line-height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   height: 16px;
+  width: 16px;
   border-radius: 2px;
   letter-spacing: 0.48px;
   text-decoration-line: underline;
   transition: background-colour 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
