@@ -768,7 +768,6 @@ input:checked + .privacy-policy-elem span:first-child {
 }
 
 .checked-icon {
-  background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
