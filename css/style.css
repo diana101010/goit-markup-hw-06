@@ -770,11 +770,7 @@ input:checked + .privacy-policy-elem span:first-child {
 .checked-icon {
   border: none;
   fill: #f4f4fd;
-  visibility: hidden;
-}
-
-.checked-icon:hover {
-  visibility: visible;
+  background: #404bbf;
 }
 
 .form-button {
